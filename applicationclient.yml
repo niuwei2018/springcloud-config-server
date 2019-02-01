@@ -8,7 +8,7 @@ server:
 spring:
   profiles: dev
   application:
-    name: nw-cloud-config-client-dev
+    name: kmvcnw-cloud-config-client-dev
 eureka:
   client:
     service-url:
