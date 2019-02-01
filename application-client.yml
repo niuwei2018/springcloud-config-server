@@ -1,0 +1,28 @@
+﻿spring:
+  profiles:
+    active:
+    - dev
+---
+server:
+  port: 8201
+spring:
+  profiles: dev
+  application:
+    name: nw-cloud-config-client-dev
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka-dev:8761/eureka/
+---
+server:
+  port: 8202
+spring:
+  profiles: test
+  application:
+    name: nw-cloud-config-client-test
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka-test:8761/eureka/
+
+#  请保存为UTF-8格式
