@@ -8,7 +8,7 @@ server:
 spring:
   profiles: dev
   application:
-    name: kmw-cloud-config-client-dev-bus
+    name: kmvc你w-cloud-config-client-dev-bus
 eureka:
   client:
     service-url:
