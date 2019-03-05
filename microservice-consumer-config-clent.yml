@@ -1,0 +1,34 @@
+spring:
+  profiles:
+    active:
+      - dev
+
+---
+server: 
+  port: 7003
+
+spring:
+  profiles: dev
+  application:
+    name: user-consumer-config-clent
+
+eureka:
+  client:
+    register-with-eureka: false
+    service-url: 
+      defaultZone: http://192.168.1.130:8067/eureka/,http://eureka02:8087/eureka/,http://eureka01:8077/eureka/
+
+---
+server: 
+  port: 7004
+
+spring:
+  profiles: test
+  application:
+    name: user-consumer-config-clent
+
+eureka:
+  client:
+    register-with-eureka: false
+    service-url: 
+      defaultZone: http://192.168.1.130:8067/eureka/,http://eureka02:8087/eureka/,http://eureka01:8077/eureka/
